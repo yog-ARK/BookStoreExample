@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Flashsale</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="left-side">
+      <div class="logo">
+        <img src="icon/logo.png" alt="Logo" class="logoo">
+      </div>
+      <div class="name">
+        <span class="site-name">Ngodin</span>
+      </div>
+    </div>
+    <div class="center">
+      <input type="text" placeholder="Cari...">
+    </div>
+    <div class="right-side">
+      <div class="images">
+        <ul>
+          <li><a href="main.html" class="active"><img src="icon/home.png" alt="Image 1"></a></li>
+          <li><a href="https://wa.me/6287785625667"><img src="icon/chat.png" alt="Image 2"></a></li>
+          <li><a href="aboutus.html"><img src="icon/aboutus.png" alt="Image 3"></a></li>
+      </ul>
+      </div>
+    </div>
+    </nav>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="banner/quotes-A6.png" style="width: 100%" >
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="banner/quotes-A6.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="banner/quotes-A6.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="banner/quotes-A6.png" style="width:100%">
+        </div>
+      
+        <div class="mySlides fade">
+          <img src="banner/quotes-A6.png" style="width:100%">
+        </div>
+      
+        <a class="prev" onclick="gantiSlide(-1)">&#10094;</a>
+        <a class="next" onclick="gantiSlide(1)">&#10095;</a>
+    </div>
+
+    
+    <div class="judulkonfirmasi">
+      <div class="judulkonten1">
+        <h2>Konfirmasi Pembelian </h2>
+      </div>
+    </div>
+      
+    <div class="konfirmasi-container">
+        <div ng-app="" class="one">
+            <p>Nama Penerima : <br><input type="text" ng-model="Nama"></p>
+            <p>Nomor Telpon Penerima : <br><input type="text" ng-model="Nomor"></p>
+            <p>Alamat Lengkap : <br><input type="text" ng-model="Alamat"></p>
+            <p>Kelurahan : <br><input type="text" ng-model="Kelurahan"></p>
+            <p>Masukkan Kecamatan : <br><input type="text" ng-model="Kecamatan"></p>
+    
+            <h2>Mohon Dicek Kembali :</h2>
+            <p>Nama Penerima: <br>{{Nama}}</p>
+            <p>Nomor Telpon Penerima: <br>{{Nomor}}</p>
+            <p>Alamat Lengkap: <br>{{Alamat}}</p>
+            <p>Kelurahan: <br>{{Kelurahan}}</p>
+            <p>Kecamatan: <br>{{Kecamatan}}</p>
+    
+            <input type="checkbox" id="dataBenar">
+            <label for="dataBenar">Saya menyatakan data saya benar</label> <br>
+            <a href="pembayaraan.html" class="custom-button">Pembayaraan</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-links">
+            <a href="home.html">Home</a>
+            <a href="https://wa.me/6287785625667">Chat</a>
+            <a href="aboutus.html">More</a>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2023 Ngodin. All rights reserved.</p>
+        </div>
+      </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
